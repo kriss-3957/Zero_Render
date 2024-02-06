@@ -194,5 +194,10 @@ async def index():
     
 # In order to deploy on the vercel server the app needs to be run from the 'wsgi.py' file, so we comment out the below lines from here and move it to the wsgi.py file instead
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True)
+# if __name__ == '__main__':
+#     app.run(host='0.0.0.0', debug=True)
+
+## Bind the App to a specific port, in order to avoid blocked ports
+if __name__ == "__main__":
+    # Use a specific port, e.g., 8080
+    app.run(port=8080, debug=True)
