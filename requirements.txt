@@ -9,5 +9,6 @@ pandas==2.0.1
 transformers==4.30.1
 gunicorn==20.1.0  ## Required for deployment
 sentencepiece==0.1.96  ## to speed up the tokenizer for the ALBERTA Model
+protobuf==3.20.0  # required to run Alberta Model
 # tensorflow>=2.0,<3.0
 # tensorflow-tensorrt
